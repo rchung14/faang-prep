@@ -1,12 +1,10 @@
 from flask import Blueprint
-from ..controllers.hi import hi_logic
+from ..controllers.index import index_page
 
 bp = Blueprint('main', __name__)
 
 # a simple page that says hello
+# route is used for simple html 
 @bp.route('/')
-def hello_route():
-    return hi_logic()
-
-
-
+def index():
+    return index_page()
