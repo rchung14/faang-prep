@@ -1,5 +1,5 @@
 from flask import Blueprint
-from ..controllers.problem import get_problems
+from ..controllers.get_problem import get_problems
 
 apibp = Blueprint('api', __name__, url_prefix='/api')
 

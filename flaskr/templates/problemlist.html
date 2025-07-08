@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Problem List</span>
+    <br>
+    <ul> 
+        {% for problem in problems %}
+            <li>
+                <strong>{{ problem[0] }}</strong><br>
+                Date Solved: {{ problem[1] }}<br>
+                Time Taken: {{ problem[2] }} minutes
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
